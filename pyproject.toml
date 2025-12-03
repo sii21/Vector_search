@@ -1,0 +1,21 @@
+[project]
+name = "vectors"
+version = "0.1.0"
+description = "A package for vector operations"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.3.5",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.0",
+    "ruff>=0.14.7",
+]
+hw1 = [
+    "gensim>=4.4.0",
+    "matplotlib>=3.10.7",
+    "scikit-learn>=1.7.2",
+    "umap-learn>=0.5.9.post2",
+]
