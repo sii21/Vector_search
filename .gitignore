@@ -13,3 +13,6 @@ wheels/
 data/
 !data/.gitkeep
 !data/sentences.txt
+
+hw2/data/
+hw2/results/

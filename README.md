@@ -110,3 +110,78 @@ UMAP  time: 5.668 s
 Result:
 
 ![embeddings_n201.png](figures%2Fembeddings_n201.png)
+
+
+# HW2 – ANN Exploration
+
+This homework evaluates three ANN algorithms (ANNOY, HNSW, IVFPQ) on CLIP embeddings from a LAION-small subset.  
+The workflow includes dataset download, ground-truth generation, ANN search, and Precision@k evaluation.
+
+## Installation
+
+```bash
+uv sync --group hw2 --group dev
+```
+
+## Dataset Preparation
+Download and prepare dataset:
+
+```bash
+./hw2/download_data.sh
+```
+
+After extraction expected files:
+
+```
+hw2/data/vectors.npy
+hw2/data/payloads.jsonl
+hw2/data/tests.jsonl
+```
+
+## Ground-Truth Generation
+
+Compute exact 10 nearest neighbours for all vectors using FAISS (IndexFlatL2):
+
+Run: 
+```bash
+uv run --group hw2 python -m hw2.src.ground_truth
+```
+
+## ANNOY
+
+Parameters tested:
+
+* n_trees = [10, 25, 50, 100, 200]
+* search_k = [100, 500, 1000, 5000]
+
+Run:
+```bash
+uv run --group hw2 python -m hw2.src.annoy_runner
+```
+
+## HNSW (FAISS)
+
+Parameters tested:
+
+* M = [8, 16, 32, 64]
+* efConstruction = [32, 64, 100, 128, 256]
+* efSearch = [32, 64, 100, 128, 256]
+
+Run:
+```bash
+uv run --group hw2 python -m hw2.src.hnsw
+```
+
+## IVFPQ (FAISS)
+
+Parameters tested:
+
+* nlist = [64, 128, 256, 512, 1024]
+* m = [16, 32]
+* nbits = [8]
+* nprobe = [1, 2, 4, 8, 16, 32, 64, 128]
+
+Run:
+```bash
+uv run --group hw2 python -m hw2.src.ivfpq
+```
