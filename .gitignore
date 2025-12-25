@@ -13,3 +13,13 @@ wheels/
 data/
 !data/.gitkeep
 !data/sentences.txt
+
+hw2/data/
+hw2/results/
+
+hw6/data/
+hw6/cache/
+hw6/qdrant_storage/
+hw6/qdrant_storage_fusion/
+hw6/qdrant_storage_colbert/
+hw6/qdrant_storage_crossencoder/

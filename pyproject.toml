@@ -19,3 +19,18 @@ hw1 = [
     "scikit-learn>=1.7.2",
     "umap-learn>=0.5.9.post2",
 ]
+hw2 = [
+    "annoy>=1.17.3",
+    "faiss-cpu>=1.13.1",
+    "numpy>=2.3.5",
+    "tqdm>=4.67.1",
+]
+hw6 = [
+    "mteb>=1.14.0",
+    "numpy>=2.3.5",
+    "qdrant-client>=1.12.1",
+    "sentence-transformers>=3.3.1",
+    "torch>2.4",
+    "tqdm>=4.67.1",
+    "transformers>=4.44,<4.45",
+]
