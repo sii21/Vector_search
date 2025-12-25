@@ -1,0 +1,1 @@
+{"task": "crossencoder_search", "model": "cross-encoder/ms-marco-MiniLM-L-6-v2", "MRR": 0.6263730158730157, "QPS": 4.134292828281088, "total_search_time": 72.56380050000735}

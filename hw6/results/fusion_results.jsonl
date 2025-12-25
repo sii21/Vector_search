@@ -1,0 +1,4 @@
+{"task": "fusion_search", "rrf_k": 10, "MRR": 0.6047248677248679, "QPS": 46.11265832743159, "total_search_time": 6.505805799999507}
+{"task": "fusion_search", "rrf_k": 30, "MRR": 0.6047248677248679, "QPS": 42.728107634452776, "total_search_time": 7.021139400007087}
+{"task": "fusion_search", "rrf_k": 60, "MRR": 0.6047248677248679, "QPS": 41.31040003915257, "total_search_time": 7.26209380000364}
+{"task": "fusion_search", "rrf_k": 100, "MRR": 0.6047248677248679, "QPS": 39.824902646977336, "total_search_time": 7.532975100009935}

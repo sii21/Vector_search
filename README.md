@@ -175,7 +175,6 @@ uv run --group hw2 python -m hw2.src.hnsw
 ## IVFPQ (FAISS)
 
 Parameters tested:
-
 * nlist = [64, 128, 256, 512, 1024]
 * m = [16, 32]
 * nbits = [8]
@@ -185,3 +184,52 @@ Run:
 ```bash
 uv run --group hw2 python -m hw2.src.ivfpq
 ```
+
+# HW6 – Hybrid Search
+
+This homework implements hybrid search using Qdrant with dense and sparse vectors, explores different fusion strategies (RRF, DBSF), late interaction with ColBERT,
+and cross-encoder reranking on the SciFact dataset
+
+## Installation
+
+```bash
+uv sync --group hw6 --group dev
+```
+
+## Dataset Preparation
+
+Download SciFact dataset:
+
+```bash
+uv run --group hw6 python -m hw6.download_data
+```
+
+## Task 2.2.1: Fusion-based Hybrid Search
+
+```bash
+uv run --group hw6 python -m hw6.src.fusion_search
+```
+
+Expected MRR: 0.5-0.65
+
+## Task 2.2.2: Late Interaction with ColBERT
+
+```bash
+uv run --group hw6 python -m hw6.src.colbert_search
+```
+
+## Task 2.2.3: Cross-Encoder Reranking
+
+```bash
+uv run --group hw6 python -m hw6.src.crossencoder_search
+```
+
+## Task 3: Competition (MRR > 0.69)
+
+```bash
+uv run --group hw6 python -m hw6.src.competition
+```
+
+Results saved to: `hw6/results/final_hybrid_results.jsonl`
+
+See [hw6/README.md](hw6/README.md) for detailed documentation.
