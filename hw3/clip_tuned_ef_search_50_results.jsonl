@@ -1,0 +1,1 @@
+{"m": 36, "ef_construct": 300, "Precision@1": 0.00104, "Precision@3": 0.66594, "Precision@5": 0.7987839999999999, "Precision@10": 0.8978980000000002, "total_search_time": 107.07639503479004, "QPS": 933.9126514999795, "ef_search": 50}

@@ -8,8 +8,14 @@ wheels/
 
 # Virtual environments
 .venv
+.vscode
 .idea
 
 data/
 !data/.gitkeep
 !data/sentences.txt
+hw3/data/
+!hw3/data/.gitkeep
+hw3/snapshots/
+hw6/qdrant_storage/
+hw6/qdrant_storage_*/
