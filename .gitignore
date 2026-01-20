@@ -13,3 +13,11 @@ wheels/
 data/
 !data/.gitkeep
 !data/sentences.txt
+hw4/data/
+!hw4/data/.gitkeep
+hw4/qdrant_storage/
+hw6/qdrant_storage/
+hw6/qdrant_storage*/
+
+hw3/snapshots/
+hw4/snapshots/
