@@ -19,3 +19,6 @@ hw1 = [
     "scikit-learn>=1.7.2",
     "umap-learn>=0.5.9.post2",
 ]
+hw3 = [
+    "qdrant-client>=1.12.1",
+]
